@@ -40,20 +40,21 @@ Prior to actually submitting your final attempt you should ensure you have revie
 
 
 1. Refactored ```rock_paper_scissors``` function.
-2. Does your solution follow accepted coding conventions?
+2. Appropriate Docstring for the `rock_paper_scissors` function.
+3. Does your solution follow accepted coding conventions?
 
 
 
 
 ## Tasks 1-4 Coding Standards rubric
 
-
-| Marks | Programming Conventions |
+| Marks | Programming Conventions and Code Quality |
 | :---- | :---- |
-| **Distinction (70%+)** | Code is exemplary in its organisation, clarity, and maintainability, adhering to industry best practices and coding standards. It employs descriptive variable names, consistent indentation, and is self-documenting, requiring minimal comments. |
-| **Merit (60-69%)** | Code is well-structured and readable, largely aligning with industry best practices and coding standards. It utilises clear variable names and consistent indentation, with comments used judiciously for clarity. |
-| **Pass (40-59%)** | Code displays reasonable organisation and readability, with potential for refinement in variable naming, indentation and making the code more self-explanatory. This indicates a developing understanding of programming conventions. |
-| **Fail (\<40%)** | Code demonstrates initial efforts towards organisation and readability but requires significant enhancements to improve clarity, maintainability and adherence to industry best practices. This suggests a need for further development in programming conventions and software design principles. |
-| **0%** | No attempt |                                                                                                                                                                                     |
+| **Outstanding (80%+)** | The submitted code represents an **exceptional, highly optimised, and genuinely elegant solution** that demonstrates the student has **gone the extra mile** and exceeded the brief. The implementation utilises **advanced or creative methods** (e.g., highly efficient data structures or advanced Pythonic idioms) which may not have been explicitly taught, showcasing near-professional **software engineering principles**. The solution is perfectly clean, robust, and is structured with **pure functions** and **minimal nesting (ideally max 1 level)**. The response is sophisticated, achieving **conciseness and clarity without sacrificing readability**. |
+| **Distinction (70-79%)** | The submitted code is an **outstanding, elegant, and efficient solution**, fully reflecting **industry-standard practice (e.g., PEP 8\)**. The design demonstrates a strong command of software design principles, adhering to **DRY** (Don't Repeat Yourself) and **KISS** (Keep It Small and Simple) while prioritising **readability**. The function structure is highly discrete, following a **'pure functions' paradigm** where appropriate, and **deep nesting is entirely avoided**. A **comprehensive, correctly formatted Docstring** is provided. **Comments are judiciously rare** and strictly informational. |
+| **Merit (60-69%)** | Code is **highly competent**, well-structured, and aligns closely with industry best practices. There is **considerable evidence** of applying **DRY and KISS principles**, with functions being discrete and manageable. **Deep nesting is generally avoided**. The primary function includes a **clear and appropriate Docstring**. The solution uses clear naming and consistent formatting. **Comments are used sparingly** to clarify non-obvious logic. |
+| **Pass (40-59%)** | Code is **functional and competently organised**, showing a developing understanding of professional conventions. There are areas for **further refinement** in adherence to style guides (e.g., minor inconsistencies in naming or formatting). Logic may be **somewhat repetitive (DRY issues)**, and structural complexity is occasionally present due to **moderate nesting (3+ levels)**. A **Docstring may be incomplete, poorly formatted, or missing**. **Comments may be redundant** or inconsistent. |
+| **Fail (\<40%)** | Code requires **substantial work** to improve clarity, maintainability, and structural design. There are **repeated violations of core principles (DRY, KISS)**, and structural complexity is high. This suggests a **need for further development** in professional coding standards. Key elements like a **Docstring are missing**, and the use of comments is unhelpful. |
+| **0%** | No attempt |
 
 
