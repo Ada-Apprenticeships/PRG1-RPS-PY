@@ -1,15 +1,44 @@
-name: Autograding
+# ─────────────────────────────────────────────────────────────────────────────
+# GitHub Actions autograder for the prg1-rps-py assignment.
+# ─────────────────────────────────────────────────────────────────────────────
+name: Autograding Tests
+
 on:
   push:
-    branches: [ "main" ]
   workflow_dispatch:
+  repository_dispatch:
+
+permissions:
+  checks: write
+  actions: read
+  contents: read
+
 jobs:
-  run-autograding:
+  run-autograding-tests:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Check out the student's code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - uses: education/autograding@v1
-        id: autograding
+
+      # Runs pytest (it picks up rps_test.py automatically) and awards a score
+      # proportional to the number of tests that pass, out of max-score (100).
+      - name: Run tests
+        id: rps
+        uses: classroom-resources/autograding-python-grader@v1
+        with:
+          timeout: 10
+          max-score: 6
+          setup-command: 'pip install pytest'
+
+      # Aggregates the grader result and writes the check-run annotation
+      - name: Autograding Reporter
+        uses: classroom-resources/autograding-grading-reporter@v1
+        env:
+          RPS_RESULTS: "${{ steps.rps.outputs.result }}"
+        with:
+          runners: rps
